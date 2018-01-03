@@ -1,5 +1,7 @@
 # Payday BOT
 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 Bot que faz os avisos aos usuários do payday sobre as faturas que precisam ser pagas
 
 ## Executando
