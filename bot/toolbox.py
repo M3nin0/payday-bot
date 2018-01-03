@@ -17,7 +17,7 @@ class ToolBox(object):
         scope = ['https://spreadsheets.google.com/feeds']
 
         try:
-            creds = ServiceAccountCredentials.from_json_keyfile_name('./keys/' + str(file_json), scope)
+            creds = ServiceAccountCredentials.from_json_keyfile_name('./bot/keys/' + str(file_json), scope)
             client = gspread.authorize(creds)
             return client.open(name_sheet).sheet1
         except BaseException as e:

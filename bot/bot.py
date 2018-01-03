@@ -45,7 +45,7 @@ class Bot(object):
             # Recebe o arquivo .json e faz a conexão com a planilha do usuário
             file_id = update.message.document.file_id
             _json_key = bot.get_file(file_id)
-            _json_key.download('keys/' + str(file_id) + '.json')
+            _json_key.download('bot/keys/' + str(file_id) + '.json')
 
             table = ToolBox.connect_api(str(file_id) + '.json', 'faturas')
             if table == -1:
